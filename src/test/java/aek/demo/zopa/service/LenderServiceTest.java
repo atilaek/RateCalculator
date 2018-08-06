@@ -41,25 +41,25 @@ public class LenderServiceTest {
         List<Lender> returnedLenders = lenderService.getLenders();
         assertTrue(returnedLenders.get(0).getName().equals(allLenders.get(0).getName()));
         assertTrue(returnedLenders.get(0).getRate().equals(allLenders.get(0).getRate()));
-        assertTrue(returnedLenders.get(0).getAvailable().equals(allLenders.get(0).getAvailable()));
+        assertTrue(returnedLenders.get(0).getAvailableAmount().equals(allLenders.get(0).getAvailableAmount()));
         assertTrue(returnedLenders.get(1).getName().equals(allLenders.get(1).getName()));
         assertTrue(returnedLenders.get(1).getRate().equals(allLenders.get(1).getRate()));
-        assertTrue(returnedLenders.get(1).getAvailable().equals(allLenders.get(1).getAvailable()));
+        assertTrue(returnedLenders.get(1).getAvailableAmount().equals(allLenders.get(1).getAvailableAmount()));
         assertTrue(returnedLenders.get(2).getName().equals(allLenders.get(2).getName()));
         assertTrue(returnedLenders.get(2).getRate().equals(allLenders.get(2).getRate()));
-        assertTrue(returnedLenders.get(2).getAvailable().equals(allLenders.get(2).getAvailable()));
+        assertTrue(returnedLenders.get(2).getAvailableAmount().equals(allLenders.get(2).getAvailableAmount()));
         assertTrue(returnedLenders.get(3).getName().equals(allLenders.get(3).getName()));
         assertTrue(returnedLenders.get(3).getRate().equals(allLenders.get(3).getRate()));
-        assertTrue(returnedLenders.get(3).getAvailable().equals(allLenders.get(3).getAvailable()));
+        assertTrue(returnedLenders.get(3).getAvailableAmount().equals(allLenders.get(3).getAvailableAmount()));
         assertTrue(returnedLenders.get(4).getName().equals(allLenders.get(4).getName()));
         assertTrue(returnedLenders.get(4).getRate().equals(allLenders.get(4).getRate()));
-        assertTrue(returnedLenders.get(4).getAvailable().equals(allLenders.get(4).getAvailable()));
+        assertTrue(returnedLenders.get(4).getAvailableAmount().equals(allLenders.get(4).getAvailableAmount()));
         assertTrue(returnedLenders.get(5).getName().equals(allLenders.get(5).getName()));
         assertTrue(returnedLenders.get(5).getRate().equals(allLenders.get(5).getRate()));
-        assertTrue(returnedLenders.get(5).getAvailable().equals(allLenders.get(5).getAvailable()));
+        assertTrue(returnedLenders.get(5).getAvailableAmount().equals(allLenders.get(5).getAvailableAmount()));
         assertTrue(returnedLenders.get(6).getName().equals(allLenders.get(6).getName()));
         assertTrue(returnedLenders.get(6).getRate().equals(allLenders.get(6).getRate()));
-        assertTrue(returnedLenders.get(6).getAvailable().equals(allLenders.get(6).getAvailable()));
+        assertTrue(returnedLenders.get(6).getAvailableAmount().equals(allLenders.get(6).getAvailableAmount()));
     }
 
     @Test

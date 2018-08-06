@@ -32,7 +32,7 @@ public class LenderService {
     public LenderService(final String cvsFileLocation) throws FileNotFoundException {
         this.lenders = CvsFileReader.readCsvFile(cvsFileLocation);
         sortLendersFromLowestRate();
-        possibleMaxLenderOffer = lenders.stream().mapToInt(o -> o.getAvailable()).sum();
+        possibleMaxLenderOffer = lenders.stream().mapToInt(o -> o.getAvailableAmount()).sum();
     }
 
     int getPossibleMaxLenderOffer() {

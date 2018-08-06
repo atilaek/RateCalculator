@@ -40,9 +40,9 @@ public class RateCalculator {
                 String cvsFileLocation = args[0];
                 LenderService lenderService = new LenderService(cvsFileLocation);
 
-                Borrower theBarrower = new Borrower(loan, lenderService);
+                Borrower borrowerInst = new Borrower(loan, lenderService);
 
-                System.out.println(theBarrower.toString());
+                System.out.println(borrowerInst.toString());
             }
         } catch (NumberFormatException e) {
             System.out.println(INVALID_INPUT_ERROR_MSG);

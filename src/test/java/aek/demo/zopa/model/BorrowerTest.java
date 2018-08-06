@@ -10,7 +10,7 @@ import org.junit.Test;
 import aek.demo.zopa.service.LenderService;
 import aek.demo.zopa.service.repository.RateResourcesBundle;
 
-public class BarrowerTest {
+public class BorrowerTest {
     private static RateResourcesBundle rateResourcesBundle = new RateResourcesBundle("rateResources");
     private static final int VIEW_AVERAGE_RATE_SCALE = Integer.
             parseInt(rateResourcesBundle.getViewAverageRateScale());

@@ -45,8 +45,8 @@ public class CalculationService {
             throw new InsufficientOfferEception(INSUFFICIENT_OFFER_ERROR_MSG);
         }
         for (Lender lender : lenderService.getLenders()) {
-            if (remainingLoan > lender.getAvailable()) {
-                remainingLoan -= lender.getAvailable();
+            if (remainingLoan > lender.getAvailableAmount()) {
+                remainingLoan -= lender.getAvailableAmount();
                 requiredLenders.add(lender);
             } else {
                 requiredLenders.add(new Lender(lender.getName(), lender.getRate(), remainingLoan));
@@ -81,7 +81,7 @@ public class CalculationService {
         BigDecimal totalRepayment = new BigDecimal(0);
         for (Lender lender : requiredLenders) {
             totalRepayment = totalRepayment.add(
-                    BigDecimal.valueOf(lender.getAvailable())
+                    BigDecimal.valueOf(lender.getAvailableAmount())
                             .multiply(BigDecimal.ONE.add(lender.getRate())));
         }
         return totalRepayment;

@@ -54,16 +54,16 @@ public class CalculationServiceTest {
 
         assertTrue(returnedLenders.get(0).getName().equals(requiredLenders.get(0).getName()));
         assertTrue(returnedLenders.get(0).getRate().equals(requiredLenders.get(0).getRate()));
-        assertTrue(returnedLenders.get(0).getAvailable().equals(requiredLenders.get(0).getAvailable()));
+        assertTrue(returnedLenders.get(0).getAvailableAmount().equals(requiredLenders.get(0).getAvailableAmount()));
         assertTrue(returnedLenders.get(1).getName().equals(requiredLenders.get(1).getName()));
         assertTrue(returnedLenders.get(1).getRate().equals(requiredLenders.get(1).getRate()));
-        assertTrue(returnedLenders.get(1).getAvailable().equals(requiredLenders.get(1).getAvailable()));
+        assertTrue(returnedLenders.get(1).getAvailableAmount().equals(requiredLenders.get(1).getAvailableAmount()));
         assertTrue(returnedLenders.get(2).getName().equals(requiredLenders.get(2).getName()));
         assertTrue(returnedLenders.get(2).getRate().equals(requiredLenders.get(2).getRate()));
-        assertTrue(returnedLenders.get(2).getAvailable().equals(requiredLenders.get(2).getAvailable()));
+        assertTrue(returnedLenders.get(2).getAvailableAmount().equals(requiredLenders.get(2).getAvailableAmount()));
         assertTrue(returnedLenders.get(3).getName().equals(requiredLenders.get(3).getName()));
         assertTrue(returnedLenders.get(3).getRate().equals(requiredLenders.get(3).getRate()));
-        assertTrue(returnedLenders.get(3).getAvailable().equals(requiredLenders.get(3).getAvailable()));
+        assertTrue(returnedLenders.get(3).getAvailableAmount().equals(requiredLenders.get(3).getAvailableAmount()));
     }
 
     @Test(expected = InsufficientOfferEception.class)

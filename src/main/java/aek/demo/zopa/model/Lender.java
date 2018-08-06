@@ -12,19 +12,19 @@ public class Lender implements Comparable<Lender> {
 
     private String name;
     private BigDecimal rate;
-    private Integer available;
+    private Integer availableAmount;
 
     /**
      * Main Lender constructor for creating Lender objects.
      *
      * @param name name of the Lender
      * @param rate interest rate of the Lender to give loan
-     * @param available the amount that lender can give loan
+     * @param availableAmount the amount that lender can give loan
      */
-    public Lender(String name, BigDecimal rate, Integer available) {
+    public Lender(String name, BigDecimal rate, Integer availableAmount) {
         this.name = name;
         this.rate = rate;
-        this.available = available;
+        this.availableAmount = availableAmount;
     }
 
     public String getName() {
@@ -35,8 +35,8 @@ public class Lender implements Comparable<Lender> {
         return rate;
     }
 
-    public Integer getAvailable() {
-        return available;
+    public Integer getAvailableAmount() {
+        return availableAmount;
     }
 
     @Override

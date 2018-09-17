@@ -80,6 +80,10 @@ C:\RateCalculator>java -jar target/RateCalculator-1.0-SNAPSHOT.jar src/main
 /resources/marketData.csv 1100
 ```
 
+## Notes
+
+* Scales for precision of calculation can be modified through properties file
+
 ## Built With
 
 * [Maven](https://maven.apache.org/) - Dependency Management
